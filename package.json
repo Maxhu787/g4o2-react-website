@@ -1,6 +1,11 @@
 {
   "name": "g4o2-react-website",
   "version": "0.1.0",
+  "author": "Max Hu",
+  "description": "Test protfolio website",
+  "keywords": ["react.js", "react", "protfolio", "test"],
+  "license": "MIT",
+  "verstion": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
