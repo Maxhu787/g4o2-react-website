@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body {
+  margin: 0;
+  background: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background: #55d6aa;
+  margin-top: -20px;
+  height: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  float: left;
+  padding: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+.logo {
+  height: 55px;
+  width: 54px;
+  border-radius: 50px;
+  float: left;
+  margin-left: -90px;
+  transition: all 0.35s ease-in-out;
+  border: solid orange 3px;
+  margin-top: 6px;
+}
+
+.logo:hover {
+  padding: 3px;
+  border: none;
 }

@@ -1,25 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+const logo = require('../src/111.jpeg')
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          g4o2-website in construction
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: "test"
+    }
+  }
+  render() {
+    return(
+      <>
+        <Nav></Nav>
+        <p>Looking ugly at the moment</p>
+        <p>Mean while check out my other <a href="https://maxhu787.github.io/g4o2-website/">website</a></p>
+      </>
+    )
+  }
 }
+
+class Nav extends React.Component {
+  render() {
+    return (
+      <>
+        <header>
+          <div className="container">
+            <div className="logo-container">
+              <a className="logo-header" href="about.html">
+                <img className="logo" alt="logo" src={logo} />
+              </a>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="https://google.com">Home</a></li>
+                <li><a href="https://google.com">About</a></li>
+                <li><a href="https://google.com">Pricing</a></li>
+                <li><a href="https://google.com">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </>
+    )
+  }
+}
+
 
 export default App;
