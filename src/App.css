@@ -2,31 +2,37 @@
 
 body {
   margin: 0;
-  background: #222;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 800;
+  background: rgb(41, 41, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
 }
 
-.container {
+::selection {
+  background-color: rgb(145, 145, 145);
+}
+
+a {
+  text-decoration: none;
+  color: #ffa500;
+}
+
+/*---------------------------header---------------------------*/
+
+.header-container {
   width: 80%;
   margin: 0 auto;
 }
 
-header {
-  background: #55d6aa;
-  margin-top: -20px;
+.page-header {
+  background: orange;
   height: 70px;
 }
 
-header::after {
+.page-header::after {
   content: '';
   display: table;
   clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
 }
 
 nav {
@@ -75,11 +81,6 @@ nav a:hover::before {
   width: 100%;
 }
 
-
-
-
-
-
 .logo {
   height: 55px;
   width: 54px;
@@ -87,11 +88,15 @@ nav a:hover::before {
   float: left;
   margin-left: -90px;
   transition: all 0.35s ease-in-out;
-  border: solid orange 3px;
-  margin-top: 6px;
+  border: solid #ffc200 3px;
+  margin-top: 4.5px;
+  transition: border 0.35s ease-out;
 }
 
 .logo:hover {
-  padding: 3px;
+  padding: 5px;
   border: none;
 }
+
+/*---------------------------header---------------------------*/
+

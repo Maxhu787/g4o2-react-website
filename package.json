@@ -2,10 +2,15 @@
   "name": "g4o2-react-website",
   "version": "0.1.0",
   "author": "Max Hu",
-  "description": "Test protfolio website",
-  "keywords": ["react.js", "react", "protfolio", "test"],
+  "description": "React protfolio website",
+  "keywords": [
+    "react.js",
+    "react",
+    "protfolio",
+    "test"
+  ],
   "license": "MIT",
-  "verstion": "0.0.1",
+  "verstion": "0.2.4",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -13,6 +18,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

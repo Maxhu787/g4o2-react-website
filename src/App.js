@@ -1,6 +1,37 @@
 import './App.css';
 import React from 'react';
+//import { HashLink as Link } from 'react-router-hash-link';
 const logo = require('../src/111.jpeg')
+
+class Nav extends React.Component {
+  render() {
+    const g4o2 = 'https://maxhu787.github.io/g4o2-website/index.html';
+    /*const openLink = (url) => {
+      window.open(url, "_blank", "noopener, noreferrer")
+    }*/
+    return (
+      <>
+        <header className='page-header'>
+          <div className="header-container">
+            <div className="logo-container">
+              <a className="logo-header" href="about.html">
+                <img className="logo" alt="logo" src={logo} />
+              </a>
+            </div>
+            <nav>
+              <ul>
+                <li><a href={g4o2} target="_blank" rel="noopener, noreferrer">Temp</a></li>
+                <li><a href={g4o2} target="_blank" rel="noopener, noreferrer">Temp</a></li>
+                <li><a href={g4o2} target="_blank" rel="noopener, noreferrer">Temp</a></li>
+                <li><a href={g4o2} target="_blank" rel="noopener, noreferrer">Temp</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </>
+    )
+  }
+}
 
 class App extends React.Component {
   constructor(props) {
@@ -14,37 +45,12 @@ class App extends React.Component {
       <>
         <Nav></Nav>
         <p>Looking ugly at the moment</p>
-        <p>Mean while check out my other <a href="https://maxhu787.github.io/g4o2-website/">website</a></p>
+        <p>Mean while check out my other <a href="https://maxhu787.github.io/g4o2-website/" target="_blank" rel="noopener, noreferrer">website</a></p>
       </>
     )
   }
 }
 
-class Nav extends React.Component {
-  render() {
-    return (
-      <>
-        <header>
-          <div className="container">
-            <div className="logo-container">
-              <a className="logo-header" href="about.html">
-                <img className="logo" alt="logo" src={logo} />
-              </a>
-            </div>
-            <nav>
-              <ul>
-                <li><a href="https://google.com">Home</a></li>
-                <li><a href="https://google.com">About</a></li>
-                <li><a href="https://google.com">Pricing</a></li>
-                <li><a href="https://google.com">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-      </>
-    )
-  }
-}
 
 
 export default App;
