@@ -10,7 +10,7 @@
     "test"
   ],
   "license": "MIT",
-  "verstion": "0.2.4",
+  "verstion": "0.2.6",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

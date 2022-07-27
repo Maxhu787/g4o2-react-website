@@ -44,8 +44,8 @@ class App extends React.Component {
     return(
       <>
         <Nav></Nav>
-        <p>Looking ugly at the moment</p>
-        <p>Mean while check out my other <a href="https://maxhu787.github.io/g4o2-website/" target="_blank" rel="noopener, noreferrer">website</a></p>
+        <p>Website looking ugly at the moment</p>
+        <p>Meanwhile check out my other <a href="https://maxhu787.github.io/g4o2-website/" target="_blank" rel="noopener, noreferrer">WEBSITE</a></p>
       </>
     )
   }
