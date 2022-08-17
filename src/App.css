@@ -6,15 +6,19 @@ body {
   color: #fff;
   text-align: center;
   height: 1000px;
-  /*background: linear-gradient(0.25turn, rgb(78, 211, 255), rgb(158, 158, 158),  #ffa500);*/
-  background-color: #000;
+  background: linear-gradient(0.25turn, #000,#ea9f15);
+  /*background-image:  url('../src/0000001.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;*/
 }
 
 ::selection {
   background-color: rgb(145, 145, 145);
 }
 .test {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
 }
 a {
@@ -35,14 +39,16 @@ a:hover {
 
 /*---------------------------header---------------------------*/
 
+
+.page-header {
+  background: rgba(0, 0, 0, 0.9);
+  height: 70px;
+  z-index: 999;
+}
+
 .header-container {
   width: 80%;
   margin: 0 auto;
-}
-
-.page-header {
-  background: #000;
-  height: 70px;
 }
 
 .page-header::after {
@@ -105,14 +111,32 @@ nav a:hover::before {
   margin-left: -10%;
   margin-top: 3.5px;
   user-select: none;
-  box-shadow: 4px 3px 0px rgb(255, 255, 255);
-  transition: border .3s ease-out;
+  box-shadow: 3px 4px 8px #ffa500;
+  transition: all .3s ease-out;
 }
 .logo:active {
-  transition: all .0s;
   box-shadow: none;
   margin-top: 7px;
   margin-left: -9.5%;
+}
+
+.navbar-btn {
+  height: 45px;
+  width: 45px;
+  background: transparent;
+  color: #ffa500;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  border-radius: 10px;
+}
+
+.navbar-btn:hover {
+  background-color: rgba(255, 153, 0, 0.3);
+}
+
+.navbar-btn-right {
+  margin-right: -10%;
+  margin-left: 10%;
 }
 
 /*---------------------------header---------------------------*/
@@ -142,7 +166,6 @@ transparent)
 }
 
 @keyframes rainbow_animation {
-
   0%,
   100% {
     background-position: 0 0;
@@ -151,4 +174,51 @@ transparent)
   50% {
     background-position: 100% 0;
   }
+}
+
+
+#footer {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  background-color: rgba(41, 41, 41, .5);
+  padding: 70px;
+}
+
+/*-------------------------------------------------------------*/
+
+.img-container {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  background: rgba(0, 0, 0, 0);
+  transform: rotate(-25deg) skew(25deg) scale(0.5);
+  transition: .4s;
+  margin: 0 auto;
+  margin-top: -35px;
+}
+
+.img-container img {
+  position: absolute;
+  width: 100%;
+  transition: .4s;
+}
+
+.img-container:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.img-container:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.img-container:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.img-container:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
 }
