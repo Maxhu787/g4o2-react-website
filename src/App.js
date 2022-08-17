@@ -41,13 +41,10 @@ class Main extends React.Component {
         "height": "5000px"
       }}>
         <div>
-          <p class="test" id="al">Alumni Sans Pinstripe</p>
-          <p class="test" id="mo">Montserrat</p>
-          <p class="test" id="or">Orbitron</p>
-          <p class="test" id="wo">Work Sans</p>
+          <p class="test mo">Website unfinished at the momentt</p>
+          <p class="test mo">Meanwhile check out my other</p>
+          <a class="test or rainbow_text_animated" href="https://maxhu787.github.io/g4o2-website/" target="_blank" rel="noopener, noreferrer">WEBSITE</a>
         </div>
-        <p>Website unfinished at the moment</p>
-        <p>Meanwhile check out my other <a href="https://maxhu787.github.io/g4o2-website/" target="_blank" rel="noopener, noreferrer">WEBSITE</a></p>
       </div>
     )
   }

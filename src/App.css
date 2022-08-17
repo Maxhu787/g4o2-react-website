@@ -6,31 +6,33 @@ body {
   color: #fff;
   text-align: center;
   height: 1000px;
-  background: linear-gradient(0.25turn, rgb(78, 211, 255), rgb(158, 158, 158),  #ffa500);
+  /*background: linear-gradient(0.25turn, rgb(78, 211, 255), rgb(158, 158, 158),  #ffa500);*/
+  background-color: #000;
 }
 
 ::selection {
   background-color: rgb(145, 145, 145);
 }
 .test {
-  font-size: 60px;
+  font-size: 50px;
+  color: #fff;
 }
 a {
   text-decoration: none;
   color: #ffa500;
+  transition: color .3s ease-in;
 }
-#al {
-  font-family: 'Alumni Sans Pinstripe';
+a:hover {
+  color: rgb(0, 204, 255);
 }
-#mo{
+
+.mo{
   font-family: 'Montserrat';
 }
-#or {
+.or {
   font-family: 'Orbitron';
 }
-#wo {
-  font-family: 'Work Sans';
-}
+
 /*---------------------------header---------------------------*/
 
 .header-container {
@@ -128,4 +130,25 @@ rgba(255, 255, 255, .2) 25%, transparent 25%,
 transparent 50%, rgba(255, 255, 255, .2) 50%,
 rgba(255, 255, 255, .2) 75%, transparent 75%, 
 transparent)
+}
+/*-------------------------------------------------------------*/
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
 }
