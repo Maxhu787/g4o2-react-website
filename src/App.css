@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat:wght@300&family=Orbitron&display=swap?family=Work+Sans:400');
 body {
   margin: 0;
   background: rgb(41, 41, 41);
@@ -48,7 +47,7 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 70px;
-  padding-top: 23px;
+  padding-top: 26px;
 
   position: relative;
 }
@@ -86,16 +85,17 @@ nav a:hover::before {
   width: 54px;
   border-radius: 50px;
   float: left;
-  margin-left: -90px;
-  transition: all 0.35s ease-in-out;
+  margin-left: -10%;
   border: solid #ffc200 3px;
-  margin-top: 4.5px;
-  transition: border 0.35s ease-out;
+  margin-top: 4px;
+  box-shadow: 4.5px 4px 4px rgb(41, 41, 41);
+  transition: border .3s ease-out;
 }
-
-.logo:hover {
-  padding: 5px;
-  border: none;
+.logo:active {
+  transition: all .0s;
+  box-shadow: none;
+  margin-top: 7px;
+  margin-left: -9.5%;
 }
 
 /*---------------------------header---------------------------*/
