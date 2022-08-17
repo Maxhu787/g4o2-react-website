@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat:wght@300&family=Orbitron&display=swap?family=Work+Sans:400');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat:wght@300&family=Orbitron&family=Work+Sans:wght@300&display=swap');
 body {
   margin: 0;
   background: rgb(41, 41, 41);
@@ -10,12 +10,25 @@ body {
 ::selection {
   background-color: rgb(145, 145, 145);
 }
-
+.test {
+  font-size: 60px;
+}
 a {
   text-decoration: none;
   color: #ffa500;
 }
-
+#al {
+  font-family: 'Alumni Sans Pinstripe';
+}
+#mo{
+  font-family: 'Montserrat';
+}
+#or {
+  font-family: 'Orbitron';
+}
+#wo {
+  font-family: 'Work Sans';
+}
 /*---------------------------header---------------------------*/
 
 .header-container {
@@ -88,6 +101,7 @@ nav a:hover::before {
   margin-left: -10%;
   border: solid #ffc200 3px;
   margin-top: 4px;
+  user-select: none;
   box-shadow: 4.5px 4px 4px rgb(41, 41, 41);
   transition: border .3s ease-out;
 }
