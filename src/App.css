@@ -163,6 +163,7 @@ transparent)
   color: transparent;
   animation: rainbow_animation 6s ease-in-out infinite;
   background-size: 400% 100%;
+  font-size: 20px;
 }
 
 @keyframes rainbow_animation {
